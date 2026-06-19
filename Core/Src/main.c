@@ -110,7 +110,7 @@ int main(void) {
 
 		printf("%d\r\n", adc_value);
 
-		HAL_Delay(100);
+		HAL_Delay(4); // 250 hz
 		/* USER CODE BEGIN 3 */
 	}
 	/* USER CODE END 3 */
