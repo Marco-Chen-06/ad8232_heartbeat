@@ -5,9 +5,9 @@ from scipy.signal import butter, iirnotch, tf2sos, sosfilt, sosfilt_zi
 # sampling rate in hz
 fs = 250
 
-# design 3rd order butterworth high pass filter with 0.5 hz fcutoff 
+# design butterworth high pass filter with 0.5 hz fcutoff 
 hp_sos = butter(4, 0.5, btype="high", fs=fs, output="sos")
-# 3rd order buttersworth low pass filter with 40 hz cutof
+# buttersworth low pass filter with 40 hz cutof
 lp_sos = butter(4, 40, btype="low", fs=fs, output="sos")
 # 2nd order iir notch filter with 60 Hz target freq and 30 quality factor (2 hz width)
 bn, an = iirnotch(60, 30, fs=fs)
